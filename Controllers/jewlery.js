@@ -16,7 +16,6 @@ const keyword = async (req, res) => {
             }
             let totalVolume = 0
             let totalDifficulty = 0
-
             for (l of i.keywords) {
                 totalVolume += l.searchVolume;
                 totalDifficulty += l.keywordDifficulty
@@ -42,9 +41,9 @@ const keyword = async (req, res) => {
         }
         const metrics = {
             "noOfKeywords": keywords.length,
-            "totalVolume":totalVolume,
-            "totalDifficulty":totalDifficulty,
-            "keywordDifficulty":keywordDifficulty
+            "totalVolume": totalVolume,
+            "totalDifficulty": totalDifficulty,
+            "keywordDifficulty": keywordDifficulty
 
         }
 
