@@ -1,6 +1,5 @@
 const knex = require("./connection")
 
-
 let keyword = () => {
     return knex('keyword').select('keyword.keyword', 'keyword.metrics', 'keyword.category', 'keyword.keywords')
 }
