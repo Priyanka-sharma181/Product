@@ -29,7 +29,6 @@ const keyword = async (req, res) => {
                 "noOfKeywords": i.keywords.length,
                 "totalVolume": totalVolume,
                 "keywordDifficulty": keywordDifficulty,
-                // "metricsId": i.categoryId
             }
             i.metrics = matrics
         }
